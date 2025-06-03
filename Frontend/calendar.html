@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calendário - WebSport</title>
+  <link rel="stylesheet" href="css/calendar.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>CALENDÁRIO</h1>
+    </header>
+
+    <main class="calendar-wrapper">
+      <div id="calendar"></div>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Feedback do treino</h2>
+        <p id="selectedDate" class="modal-date"></p>
+        <textarea id="feedbackInput" placeholder="Digite seu feedback..."></textarea>
+        <div class="button-row">
+          <button id="saveBtn">Salvar</button>
+          <button id="deleteBtn">Excluir</button>
+          <button id="closeModal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="js/calendar.js"></script>
+</body>
+</html>

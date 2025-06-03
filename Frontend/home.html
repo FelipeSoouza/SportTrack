@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home - WebSport</title>
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo-wrapper">
+        <img src="assets/logo.jpeg" alt="Logo" class="logo" />
+      </div>
+      <h2 class="username">Bem-vindo(a)</h2>
+      <p class="subtitle">Esporte: <span id="selectedSport">Jiu Jitsu</span></p>
+    </header>
+
+    <main class="grid">
+      <button class="card" id="btnCalendar">
+        <span class="material-icons" style="font-size:30px;">calendar_today</span>
+        <span class="card-text">Calendário</span>
+      </button>
+
+      <button class="card" id="btnHistory">
+        <span class="material-icons" style="font-size:30px;">history</span>
+        <span class="card-text">Histórico</span>
+      </button>
+
+      <button class="card" id="btnStats">
+        <span class="material-icons" style="font-size:30px;">bar_chart</span>
+        <span class="card-text">Estatísticas</span>
+      </button>
+
+      <button class="card" id="btnChangeSport">
+        <span class="material-icons" style="font-size:30px;">edit</span>
+        <span class="card-text">Trocar Esporte</span>
+      </button>
+    </main>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Escolha o Esporte</h3>
+      <ul id="sportsList" class="sports-list"></ul>
+      <button id="closeModal" class="close-button">Fechar</button>
+    </div>
+  </div>
+
+  <script src="js/home.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</body>
+</html>

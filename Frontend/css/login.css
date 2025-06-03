@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  background-color: #111;
+  height: 200px;
+  border-bottom-right-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.logo-container {
+  background-color: #fff;
+  width: 90px;
+  height: 90px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logo-image {
+  width: 80px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.form-container {
+  padding: 24px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.input {
+  height: 48px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0 16px;
+  margin-bottom: 16px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  width: 100%;
+}
+
+.button {
+  background-color: #111;
+  color: white;
+  padding: 14px 0;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+.footer-text {
+  text-align: center;
+  color: #888;
+}
+
+.sign-up {
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Responsividade */
+/* ... manter o resto igual ... */
+
+@media (max-width: 480px) {
+  .header {
+    height: 150px;
+    border-bottom-right-radius: 40px;
+  }
+
+  .logo-container {
+    width: 90px;       /* maior */
+    height: 90px;      /* maior */
+    border-radius: 30px;
+  }
+
+  .logo-image {
+    width: 80px;       /* maior */
+    height: 100px;     /* maior */
+  }
+
+  .title {
+    font-size: 28px;   /* maior */
+    margin-bottom: 30px;
+  }
+
+  .input {
+    height: 50px;      /* maior */
+    font-size: 18px;   /* maior */
+    padding: 0 20px;
+  }
+
+  .button {
+    padding: 16px 0;   /* maior */
+    font-size: 18px;   /* maior */
+    margin-bottom: 20px;
+  }
+
+  .footer-text {
+    font-size: 16px;   /* maior */
+  }
+}
