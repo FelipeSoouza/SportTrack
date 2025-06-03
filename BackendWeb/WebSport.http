@@ -1,0 +1,6 @@
+@WebSport_HostAddress = http://localhost:5042
+
+GET {{WebSport_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
